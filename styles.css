@@ -98,7 +98,7 @@ nav {
 }
 
 .hamburger {
-  display: none; /* Piilotettu oletuksena */
+  display: none;
   font-size: 24px; 
   cursor: pointer;
   color: var(--color-kulta);
@@ -109,24 +109,24 @@ nav {
     background-color: var(--color-valkoinen);
 }
   .hamburger {
-    display: block; /* Näytä hampurilaissymboli pienillä näytöillä */
+    display: block;
      nav {
-        background-color: var(--color-valkoinen); /* Varmista, että tämä on määritelty */
+        background-color: var(--color-valkoinen);
     }
   }
   
   nav ul {
-    display: none; /* Piilota valikko-kohteet pienillä näytöillä */
-    flex-direction: column; /* Järjestä linkit pystysuunnassa */
-    width: 100%; /* Täysi leveys */
-    text-align: center; /* Keskitä valikon kohteet */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
   
   nav ul.active {
-    display: flex; /* Näytä valikko aktiivisena */
+    display: flex;
   }
   
-  /* Säädä navigaatio täyttämään näyttö kun aktiivinen */
+  
   .header-container {
      justify-content: space-between;
   }
@@ -413,6 +413,7 @@ button[type="submit"]:hover {
 }
 
 
+/*portfolio*/
 
 #portfolio-gallery h2 {
   text-align: center;
