@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Vujukuvat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="sisalto/Asset 3.png" alt="vujukuvat.fi logo" class="header-logo-kuva">
+               
+            </a>
+            <nav id="navbar" aria-label="Päävalikko">
+                <ul>
+                    <li><a href="index.html">koti</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
+                    <li><a href="contact.html">Ota Yhteyttä</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+    <main>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" >
+                <div class="contact-left-title">
+                    <h2>Ota meihin yhteyttä</h2>
+                    <hr>
+                    <input type="hidden" name="access_key" value="f23df30d-7765-444b-ab4a-87158f7ddae6">
+                    <input type="text" id="name" name="name" placeholder="Nimesi" class="contact-inputs" autocomplete="name" required>
+                    <input type="email" id="email" name="email" placeholder="sähköpostisi" class="contact-inputs" autocomplete="email" required>
+                    <textarea name="viesti" placeholder="viestisi" class="contact-inputs" required></textarea>
+                    <button type="submit" class="button" style="vertical-align:middle"><span>OTA YHTEYTTÄ</span></button>
+                </div>
+
+            </form>
+        
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vujukuvat. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
